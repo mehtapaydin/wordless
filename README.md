@@ -1,6 +1,5 @@
-# Assignment 03
+# Wordless
 
-**Wordless**
 
 ## Inspiration
 
