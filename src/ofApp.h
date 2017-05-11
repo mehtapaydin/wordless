@@ -4,6 +4,9 @@
 #include "ofxFaceTracker.h"
 #include "ofxOpticalFlowFarneback.h"
 #include "ofxBlur.h"
+#include "ofxCv.h"
+#include "ofxOsc.h"
+#include "Face.h"
 
 
 class ofApp : public ofBaseApp {
@@ -21,11 +24,16 @@ public:
     ofxBlur blur;
 
     ofImage text;
+    ofImage peace;
     ofImage justice;
     ofImage freedom;
+
     ofxCv::ObjectFinder finder;
     
     ofSoundPlayer player1;
     ofSoundPlayer player2;
-    
+
+    ofxOscReceiver receiver;
+    Face face;
+
 };
